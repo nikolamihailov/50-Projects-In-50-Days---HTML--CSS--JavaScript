@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    border: 2px solid blue;
+    background-color: white;
+}
+
+.toolbox {
+    background-color: steelblue;
+    width: 654px;
+    display: flex;
+    border: 1px solid steelblue;
+}
+
+.toolbox>* {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toolbox>:first-child:active,
+.toolbox>:nth-child(3):active,
+.toolbox>:nth-child(5):active {
+    transform: scale(0.95);
+}
+
+.toolbox>*:last-child {
+    margin-left: auto;
+}

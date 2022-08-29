@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+
+}
+
+html {
+    transition: all 0.5s ease;
+}
+
+html.dark {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+html.dark {
+    background-color: rgb(14, 14, 14);
+    color: var(--secondary-color);
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.toggle {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 150px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.hand {
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 85px;
+    width: 5px;
+    transform-origin: bottom center;
+    transition: all 0.3s ease-in;
+}
+
+.hand.hour {
+    transform: translate(-50%, -100%) rotate(30deg);
+}
+
+.hand.minute {
+    transform: translate(-50%, -100%) rotate(40deg);
+    height: 115px;
+}
+
+.hand.second {
+    transform: translate(-50%, -100%) rotate(50deg);
+    background-color: red;
+    width: 4px;
+    height: 115px;
+}
+
+.center-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.center-point::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 6px;
+    width: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.time {
+    font-size: 60px;
+    color: var(--secondary-color);
+}
+
+.date {
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgb(11, 11, 11, 0.6);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.date .circle {
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+
+}

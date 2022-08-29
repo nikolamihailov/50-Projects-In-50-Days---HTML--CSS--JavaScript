@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 224, 224);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    width: 350px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    height: 200px;
+}
+
+.card-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    background-color: white;
+    padding: 25px;
+}
+
+.card-title {
+    height: 20px;
+    margin: 0;
+}
+
+.card-description {
+    color: gray;
+    margin: 10px 0px 20px;
+}
+
+.author {
+    display: flex;
+}
+
+.profile-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.author-info small {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.animated-bg {
+    background-image: linear-gradient(to right,
+            #f6f7f8 0%,
+            #edeef1 10%,
+            #f6f7f8 20%,
+            #f6f7f8 100%);
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+.animated-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: -150% 0;
+    }
+}

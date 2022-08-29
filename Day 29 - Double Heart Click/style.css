@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+small {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.loveMe {
+    background-image: url(./images/photo-1592150873193-e001e1a14fdc.avif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(200, 200, 200, 0.3), 0 10px 10px rgba(200, 200, 200, 0.22);
+
+}
+
+.loveMe .fa-heart {
+    position: absolute;
+    animation: grow 1s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
