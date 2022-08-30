@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span class="result"></span>
+            <button class="btn " id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Password length</label>
+                <input type="number" name="length" id="length" min="8" max="16" step="1" value="16">
+            </div>
+            <div class="setting">
+                <label for="uppercase">Include Uppercase Letters</label>
+                <input type="checkbox" id="uppercase" name="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include Lowercase Letters</label>
+                <input type="checkbox" id="lowercase" name="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" id="numbers" name="numbers" checked>
+            </div>
+            <div class="setting">
+                <label for="symbols">Include Symbols</label>
+                <input type="checkbox" id="symbols" name="symbols" checked>
+            </div>
+
+            <button class="btn btn-large" id="generate">
+                Generate Password
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
