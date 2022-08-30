@@ -3,102 +3,102 @@ These are the projects from the Udemy course that I am currently doing. The cour
 with tutors Brad Traversy and Florin Pop. Here is a list of the projects in this course:
 
 
-    Expanding Cards
+    1. Expanding Cards
 
-    Progress Steps
+    2. Progress Steps
 
-    Rotating Navigation Animation
+    3. Rotating Navigation Animation
 
-    Hidden Search Widget
+    4. Hidden Search Widget
 
-    Blurry Loading
+    5. Blurry Loading
 
-    Scroll Animation
+    6. Scroll Animation
 
-    Split Landing Page
+    7. Split Landing Page
 
-    Form Wave
+    8. Form Wave
 
-    Sound Board
+    9. Sound Board
 
-    Dad Jokes
+    10. Dad Jokes
 
-    Event Keycodes
+    11. Event Keycodes
 
-    Faq Collapse
+    12. Faq Collapse
 
-    Random Choice Picker
+    13. Random Choice Picker
 
-    Animated Navigation
+    14. Animated Navigation
 
-    Incrementing Counter
+    15. Incrementing Counter
 
-    Drink Water
+    16. Drink Water
 
-    Movie App
+    17. Movie App
 
-    Background Slider
+    18. Background Slider
 
-    Theme Clock
+    19. Theme Clock
 
-    Button Ripple Effect
+    20. Button Ripple Effect
 
-    Drag N Drop
+    21. Drag N Drop
 
-    Drawing App
+    22. Drawing App
 
-    Kinetic Loader
+    23. Kinetic Loader
 
-    Content Placeholder
+    24. Content Placeholder
 
-    Sticky Navbar
+    25. Sticky Navbar
 
-    Double Vertical Slider
+    26. Double Vertical Slider
 
-    Toast Notification
+    27. Toast Notification
 
-    Github Profiles
+    28. Github Profiles
 
-    Double Click Heart
+    29. Double Click Heart
 
-    Auto Text Effect
+    30. Auto Text Effect
 
-    Password Generator
+    31. Password Generator
 
-    Good Cheap Fast
+    32. Good Cheap Fast
 
-    Notes App
+    33. Notes App
 
-    Animated Countdown
+    34. Animated Countdown
 
-    Image Carousel
+    35. Image Carousel
 
-    Hoverboard
+    36. Hoverboard
 
-    Pokedex
+    37. Pokedex
 
-    Mobile Tab Navigation
+    38. Mobile Tab Navigation
 
-    Password Strength Background
+    39. Password Strength Background
 
-    3d Background Boxes
+    40. 3d Background Boxes
 
-    Verify Account UI
+    41. Verify Account UI
 
-    Live User Filter
+    42. Live User Filter
 
-    Feedback UI Design
+    43. Feedback UI Design
 
-    Custom Range Slider
+    44. Custom Range Slider
 
-    Netflix Mobile Navigation
+    45. Netflix Mobile Navigation
 
-    Quiz App
+    46. Quiz App
 
-    Testimonial Box Switcher
+    47. Testimonial Box Switcher
 
-    Random Image Feed
+    48. Random Image Feed
 
-    Todo List
+    49. Todo List
 
-    Insect Catch Game
+    50. Insect Catch Game
