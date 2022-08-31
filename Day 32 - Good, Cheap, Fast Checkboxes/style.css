@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+}
+
+.toggle {
+    visibility: hidden;
+}
+
+.label {
+    width: 80px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 15px 0;
+    position: relative;
+}
+
+.toggle:checked+.label {
+    background-color: purple;
+
+
+}
+
+.ball {
+    background-color: white;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    align-items: center;
+    justify-content: center;
+    animation: slideOff 0.3s linear forwards;
+
+}
+
+.toggle:checked+.label .ball {
+    animation: slideOn 0.3s linear forwards;
+}
+
+@keyframes slideOn {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+
+
+    50% {
+        transform: translateX(60%) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(120%) scale(1);
+    }
+}
+
+@keyframes slideOff {
+    0% {
+        transform: translateX(120%) scale(1);
+    }
+
+    50% {
+        transform: translateX(60%) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
