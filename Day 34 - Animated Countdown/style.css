@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.counter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.final {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+}
+
+.counter.hide {
+    transform: translate(-50%, -50%) scale(0);
+    animation: hide 0.4s ease-out;
+}
+
+
+.final.show {
+    transform: translate(-50%, -50%) scale(1);
+    animation: show 0.4s ease-out;
+}
+
+
+@keyframes hide {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+@keyframes show {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    40% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.nums {
+    color: steelblue;
+    font-size: 50px;
+    position: relative;
+    overflow: hidden;
+
+    width: 250px;
+    height: 50px;
+}
+
+.nums span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(120deg);
+    transform-origin: bottom center;
+}
+
+.nums span.shown {
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: goIn 0.5s linear;
+
+
+}
+
+.nums span.out {
+    animation: goOut 0.5s linear;
+}
+
+@keyframes goIn {
+    0% {
+        transform: translate(-50%, -50%) rotate(120deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+}
+
+@keyframes goOut {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+
+    60% {
+        transform: translate(-50%, -50%) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-120deg);
+    }
+
+}
+
+/*
+.nums span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotationForThree 1s linear;
+}
+
+.nums span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.nums span:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.nums span:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+
+@keyframes rotationForThree {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(120deg);
+    }
+}
