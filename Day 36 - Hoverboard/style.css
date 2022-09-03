@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoverboard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+}
+
+.box {
+    background-color: rgb(45, 43, 43);
+    box-shadow: 0 0 2px #000;
+    width: 20px;
+    height: 20px;
+    margin: 0px 2px;
+    transition: 2s ease;
+
+}
+
+.box:hover {
+    transition-duration: 0s;
+}
+
+/*
+.hoverboard span.hovered {
+    transition: 1s ease;
+}
+
+/*
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
