@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 235, 224);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    font-size: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    text-align: center;
+
+}
+
+.container strong {
+    line-height: 20px;
+    font-size: 1rem;
+}
+
+.ratings {
+    display: flex;
+    margin: 20px 0;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.rating:hover,
+.rating.active {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.rating small {
+    color: #550;
+    margin: 10px 0 0;
+    font-size: 0.85rem;
+}
+
+.rating:hover small,
+.rating.active small {
+    color: black;
+
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.submit:active {
+    transform: scale(0.95);
+}
+
+.fa-heart {
+    color: red;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
